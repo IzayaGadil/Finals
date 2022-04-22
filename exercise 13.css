@@ -1,0 +1,23 @@
+h1{
+    color: rgb(80, 80, 79);
+}
+
+.box2{
+    max-width: 960px;
+    border: solid black 1px;
+    background-color: rgb(102, 192, 194);
+    padding: 10px;
+    margin: 12px auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    display: grid;
+}
+*{
+    text-align: center;
+    background-color: bisque;
+}
+@media(max-width:500px){
+    .box2{
+        grid-template-columns: 1fr;
+    }
+}
